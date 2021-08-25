@@ -1,5 +1,7 @@
 import "@astrouxds/astro-web-components/dist/astro-web-components/astro-web-components.css";
-import "../node_modules/astro-in-svelte/dist/cjs/index";
+
+import { defineCustomElements } from "@astrouxds/astro-web-components/loader";
+defineCustomElements();
 
 import App from "./App.svelte";
 
