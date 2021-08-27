@@ -1,4 +1,5 @@
 <script>
+  import RuxClassificationMarking from "../../node_modules/astro-in-svelte/src/svelte/RuxClassificationMarking.svelte";
 </script>
 
 <div
@@ -7,32 +8,32 @@
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="top-secret-sci" />
+    <RuxClassificationMarking classification="top-secret-sci" />
   </div>
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="top-secret" />
+    <RuxClassificationMarking classification="top-secret" />
   </div>
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="secret" />
+    <RuxClassificationMarking classification="secret" />
   </div>
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="confidential" />
+    <RuxClassificationMarking classification="confidential" />
   </div>
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="controlled" />
+    <RuxClassificationMarking classification="controlled" />
   </div>
   <div
     style="display: flex; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
   >
-    <rux-classification-marking classification="unclassified" />
+    <RuxClassificationMarking classification="unclassified" />
   </div>
 </div>
 <div
@@ -46,7 +47,7 @@
     >
       Top Secret//SCI
     </p>
-    <rux-classification-marking tag classification="top-secret-sci" />
+    <RuxClassificationMarking tag classification="top-secret-sci" />
   </div>
   <div
     style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
@@ -56,7 +57,7 @@
     >
       Top Secret
     </p>
-    <rux-classification-marking tag classification="top-secret" />
+    <RuxClassificationMarking tag classification="top-secret" />
   </div>
   <div
     style="display: flex; align-items:baseline;  position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
@@ -66,7 +67,7 @@
     >
       Secret
     </p>
-    <rux-classification-marking tag classification="secret" />
+    <RuxClassificationMarking tag classification="secret" />
   </div>
   <div
     style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
@@ -76,7 +77,7 @@
     >
       Confidential
     </p>
-    <rux-classification-marking tag classification="confidential" />
+    <RuxClassificationMarking tag classification="confidential" />
   </div>
   <div
     style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
@@ -86,7 +87,7 @@
     >
       Controlled Unclassified
     </p>
-    <rux-classification-marking tag classification="controlled" />
+    <RuxClassificationMarking tag classification="controlled" />
   </div>
   <div
     style="display: flex; align-items:baseline; position: relative; height: 40px; margin-bottom: 20px; overflow: hidden;"
@@ -96,7 +97,7 @@
     >
       Uncontrolled Unclassified
     </p>
-    <rux-classification-marking tag classification="unclassified" />
+    <RuxClassificationMarking tag classification="unclassified" />
   </div>
 </div>
 

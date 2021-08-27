@@ -1,31 +1,45 @@
 <script>
+  import RuxInputField from "../../node_modules/astro-in-svelte/src/svelte/RuxInputField.svelte";
+
+  let label = "hello";
+
+  setInterval(() => {
+    if (label === "hello") {
+      label = "world";
+    } else {
+      label = "hello";
+    }
+  }, 1000);
 </script>
 
 <div style="padding: 10%; display: flex; justify-content: center;">
   <div class="grid">
-    <rux-input-field label="Text Input" type="text" placeholder="Text input" />
-    <rux-input-field label="Number Input" type="number" placeholder="1" />
-    <rux-input-field
+    <RuxInputField label="Text Input" type="text" placeholder="Text input" />
+    <RuxInputField bind:label type="text" placeholder="Text input" />
+    <RuxInputField
+      label="Number Input"
+      type="number"
+      placeholder="1"
+      on:rux-change={() => console.log("rux-change heard")}
+    />
+    <RuxInputField
       label="Phone Input"
       type="tel"
       placeholder="(999) 999-9999"
+      on:change={() => console.log("native change heard")}
     />
     <rux-input-field
       label="Password Input"
       type="password"
       placeholder="Reindeer Flotilla"
     />
-    <rux-input-field
+    <RuxInputField
       label="Web address"
       type="url"
       placeholder="http://example.com"
     />
-    <rux-input-field
-      label="Email"
-      type="email"
-      placeholder="user@example.com"
-    />
-    <rux-input-field
+    <RuxInputField label="Email" type="email" placeholder="user@example.com" />
+    <RuxInputField
       label="Search"
       type="search"
       placeholder="Enter search term"

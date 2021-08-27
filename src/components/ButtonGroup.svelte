@@ -1,12 +1,18 @@
 <script>
+  import RuxButtonGroup from "../../node_modules/astro-in-svelte/src/svelte/RuxButtonGroup.svelte";
+  import RuxButton from "../../node_modules/astro-in-svelte/src/svelte/RuxButton.svelte";
+
+  const handleClick = () => {
+    console.log("clicked");
+  };
 </script>
 
 <div style="padding: 10%; display: flex; justify-content: center;">
   <div class="example-container">
-    <rux-button-group h-align="right">
-      <rux-button secondary>Cancel</rux-button>
-      <rux-button>Continue</rux-button>
-    </rux-button-group>
+    <RuxButtonGroup hAlign="right">
+      <RuxButton secondary>Cancel</RuxButton>
+      <RuxButton on:click={handleClick}>Continue</RuxButton>
+    </RuxButtonGroup>
   </div>
 </div>
 

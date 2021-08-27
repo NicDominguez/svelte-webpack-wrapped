@@ -10,6 +10,7 @@
   import GlobalStatusBar from "./components/GlobalStatusBar.svelte";
   import Icon from "./components/Icon.svelte";
   import Input from "./components/Input.svelte";
+  import Log from "./components/Log.svelte";
 </script>
 
 <main>
@@ -29,6 +30,8 @@
   <Icon />
   <h1>Input</h1>
   <Input />
+  <h1>Log</h1>
+  <Log />
 </main>
 
 <style>
