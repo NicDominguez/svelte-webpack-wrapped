@@ -1,7 +1,6 @@
 <script>
   import Header from "./components/Header.svelte";
   import Main from "./components/Main.svelte";
-  import Form from "./components/Form.svelte";
   import ButtonGroup from "./components/ButtonGroup.svelte";
   import Button from "./components/Button.svelte";
   import CheckBox from "./components/CheckBox.svelte";
@@ -10,8 +9,11 @@
   import GlobalStatusBar from "./components/GlobalStatusBar.svelte";
   import Icon from "./components/Icon.svelte";
   import Input from "./components/Input.svelte";
-  import Log from "./components/Log.svelte";
+
+  import FormTestWrapped from "./components/FormTestWrapped.svelte";
 </script>
+
+<FormTestWrapped />
 
 <main>
   <h1>Button Group</h1>
@@ -30,8 +32,6 @@
   <Icon />
   <h1>Input</h1>
   <Input />
-  <h1>Log</h1>
-  <Log />
 </main>
 
 <style>
