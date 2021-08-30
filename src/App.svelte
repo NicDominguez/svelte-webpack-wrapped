@@ -9,6 +9,7 @@
   import GlobalStatusBar from "./components/GlobalStatusBar.svelte";
   import Icon from "./components/Icon.svelte";
   import Input from "./components/Input.svelte";
+  import MonitoringProgressIcon from "./components/MonitoringProgressIcon.svelte";
 
   import FormTestWrapped from "./components/FormTestWrapped.svelte";
 </script>
@@ -32,6 +33,8 @@
   <Icon />
   <h1>Input</h1>
   <Input />
+  <h1>Monitoring Progress Icon</h1>
+  <MonitoringProgressIcon />
 </main>
 
 <style>
